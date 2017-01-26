@@ -1,0 +1,43 @@
+@import "variables";
+@import "bootstrap/bootstrap";
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-outline-secondary:hover {
+  color: $brand-primary;
+}
+
+.badge-success {
+  color: $badge-success-color;
+}
+
+.badge {
+  padding: 7px;
+  font-size: 16px;
+}
+
+.btn-attend {
+  background: $btn-attend-bg;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 4px;
+
+  &:not(.btn-success):active, &:not(.btn-success):focus {
+    border-color: $btn-attend-bg;
+    box-shadow: none;
+  }
+}
+
+.btn-success {
+  &:focus {
+    border-color: $brand-success;
+    box-shadow: none;
+  }
+}
+
+.form-control {
+  border-width: 0px;
+}
