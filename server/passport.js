@@ -17,7 +17,7 @@ module.exports = passport => {
     {
       consumerKey: process.env.TWITTER_CONSUMER_KEY,
       consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
-      callbackURL: 'http://localhost:5000/auth/twitter/callback'
+      callbackURL: process.env.TWITTER_CALLBACK
     },
     function(token, tokenSecret, profile, done) {
       // make the code asynchronous
